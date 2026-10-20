@@ -1,0 +1,12 @@
+{
+  "janus": "success",
+  "transaction": "m1",
+  "plugindata": {
+    "plugin": "janus.plugin.streaming",
+    "data": {
+      "streaming": "event",
+      "error_code": 456,
+      "error": "Can't add live stream, can't use relative paths"
+    }
+  }
+}

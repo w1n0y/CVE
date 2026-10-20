@@ -1,0 +1,18 @@
+{
+  "janus": "success",
+  "transaction": "m1",
+  "plugindata": {
+    "plugin": "janus.plugin.streaming",
+    "data": {
+      "streaming": "created",
+      "created": "mp-9001",
+      "permanent": false,
+      "stream": {
+        "id": 9001,
+        "type": "on demand",
+        "description": "poc",
+        "is_private": false
+      }
+    }
+  }
+}

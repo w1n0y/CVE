@@ -1,0 +1,12 @@
+{
+  "janus": "success",
+  "transaction": "m0",
+  "plugindata": {
+    "plugin": "janus.plugin.streaming",
+    "data": {
+      "streaming": "event",
+      "error_code": 456,
+      "error": "Can't add ondemand stream, unsupported format (we only support raw mu-Law and a-Law files right now)"
+    }
+  }
+}

